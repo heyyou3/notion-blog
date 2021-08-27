@@ -18,7 +18,7 @@ const Header = ({ titlePre = '' }) => {
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} My Notion Blog</title>
+        <title>{titlePre ? `${titlePre} |` : ''} heyyouブログ</title>
         <meta name="description" content="heyyou blog" />
         <meta name="og:title" content="heyyou BLOG" />
         <meta property="og:image" content={ogImageUrl} />
