@@ -20,7 +20,7 @@ const Header = ({ titlePre = '' }) => {
       <Head>
         <title>{titlePre ? `${titlePre} |` : ''} heyyouブログ</title>
         <meta name="description" content="heyyou blog" />
-        <meta name="og:title" content="heyyou BLOG" />
+        <meta name="og:title" content="heyyou blog" />
         <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:site" content="@pawn_heyyou" />
         <meta name="twitter:card" content="summary_large_image" />
