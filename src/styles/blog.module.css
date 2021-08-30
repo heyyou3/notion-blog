@@ -250,6 +250,10 @@
   height: 100%;
 }
 
-.articleInfo {
-  display: flex;
+.tag:not(:first-child) {
+  margin: 0 0 0 2vw;
+}
+
+.tag {
+  cursor: pointer;
 }

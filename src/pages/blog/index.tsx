@@ -68,11 +68,16 @@ const Index = ({ posts = [], preview }) => {
                   </Link>
                 </span>
               </h3>
-              <div className={blogStyles.articleInfo}>
+              <div>
                 {post.Date && (
                   <div className="posted">{getDateStr(post.Date)}</div>
                 )}
-                {post.Tag && <div>{getTags(post.Tag)}</div>}
+                <div className={blogStyles.tags}>
+                  {post.Tag &&
+                    getTags(post.Tag).map((tag) => {
+                      return <a className={blogStyles.tag}>{tag}</a>
+                    })}
+                </div>
               </div>
             </div>
           )

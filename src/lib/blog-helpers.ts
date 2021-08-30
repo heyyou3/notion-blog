@@ -1,3 +1,5 @@
+type Tags = string[]
+
 export const getBlogLink = (slug: string) => {
   return `/blog/${slug}`
 }
@@ -29,6 +31,6 @@ export const normalizeSlug = (slug) => {
   return startingSlash || endingSlash ? normalizeSlug(slug) : slug
 }
 
-export const getTags = (tags: string): string[] => {
+export const getTags = (tags: string): Tags => {
   return tags.split(',')
 }
